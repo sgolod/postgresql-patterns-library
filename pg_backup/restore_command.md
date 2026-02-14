@@ -2,7 +2,7 @@
 
 ## Введение
 
-[Документация](https://postgrespro.ru/docs/postgresql/16/runtime-config-wal#RUNTIME-CONFIG-WAL-ARCHIVE-RECOVERY)
+[Документация](https://postgrespro.ru/docs/postgresql/18/runtime-config-wal#RUNTIME-CONFIG-WAL-ARCHIVE-RECOVERY)
 
 > [!NOTE]
 > Поддерживается восстановление архивных [WAL файлов](https://postgrespro.ru/docs/postgresql/16/continuous-archiving): несжатых и сжатых в форматах `gzip`, `zstd`, `lz4`.
