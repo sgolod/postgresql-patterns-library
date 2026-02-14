@@ -2,11 +2,13 @@
 
 ## Введение
 
-[Документация](https://postgrespro.ru/docs/postgresql/16/runtime-config-wal#RUNTIME-CONFIG-WAL-ARCHIVING)
+[Документация](https://postgrespro.ru/docs/postgresql/18/runtime-config-wal#RUNTIME-CONFIG-WAL-ARCHIVING)
 
-ℹ При архивировании [WAL файлы](https://postgrespro.ru/docs/postgresql/16/continuous-archiving) сжимаются в формат `zstd` (52–62% от исходного размера, даже если включен параметр [wal_compression](https://postgrespro.ru/docs/postgresql/16/runtime-config-wal#GUC-WAL-COMPRESSION)). Это позволяет экономить место на сетевом диске и уменьшить нагрузку на ввод-вывод.
+> [!NOTE]
+> При архивировании [WAL файлы](https://postgrespro.ru/docs/postgresql/16/continuous-archiving) сжимаются в формат `zstd` (52–62% от исходного размера, даже если включен параметр [wal_compression](https://postgrespro.ru/docs/postgresql/16/runtime-config-wal#GUC-WAL-COMPRESSION)). Это позволяет экономить место на сетевом диске и уменьшить нагрузку на ввод-вывод.
 
-⚠ Удаление неактуальных WAL файлов сделано в сервисе резервного копирования, см. "[Инсталляция сервиса резервного копирования PostgreSQL](README.md)"
+> [!WARNING]
+> Удаление неактуальных WAL файлов сделано в сервисе резервного копирования, см. "[Инсталляция сервиса резервного копирования PostgreSQL](README.md)"
 
 ## Инсталляция и настройка
 
